@@ -1,0 +1,22 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "xray.amazonaws.com"
+      },
+      "Action": [
+        "logs:PutLogEvents",
+        "logs:CreateLogStream",
+        "logs:CreateLogGroup",
+        "logs:DescribeLogGroups",
+        "logs:PutRetentionPolicy"
+      ],
+      "Resource": [
+        "arn:aws:logs:us-east-1:761018845710:log-group:xray-spans:*",
+        "arn:aws:logs:us-east-1:761018845710:*"
+      ]
+    }
+  ]
+}

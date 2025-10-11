@@ -1,0 +1,25 @@
+version: 0.2
+
+env:
+  variables:
+    AWS_ACCOUNT_ID: "761018845710"
+    IMAGE_TAG: "latest"
+    ECR_REPOSITORY: "bedrock-agentcore-strands-agent"
+
+phases:
+  pre_build:
+    commands:
+      - aws ecr get-login-password --region ${AWS_DEFAULT_REGION} | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com
+      - REPOSITORY_URI=${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${ECR_REPOSITORY}
+  
+  build:
+    commands:
+      - docker build -t ${ECR_REPOSITORY}:${IMAGE_TAG} .
+      - docker tag ${ECR_REPOSITORY}:${IMAGE_TAG} ${REPOSITORY_URI}:${IMAGE_TAG}
+  
+  post_build:
+    commands:
+      - docker push ${REPOSITORY_URI}:${IMAGE_TAG}
+
+artifacts:
+  files: ['**/*']

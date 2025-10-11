@@ -1,0 +1,24 @@
+sk-7ba742674a124573a32113ceea562e56
+
+sk-90af3bbfa8f0413189bc6c6f94e46457
+
+awsDemoBedrock
+Get-Service -Name com.docker.service
+docker build -t pdfreaderadmin .
+docker run -p 8083:8083 -it pdfreaderadmin
+docker run -e s3_BUCKET_NAME=awsdemobedrock -v ~/.aws:/root/.aws -p 8083:8083 -it pdfreaderadmin
+docker run -e S3_BUCKET_NAME=awsdemobedrock -v C:\Users\Tanis\.aws:/root/.aws -p 8083:8083 -it pdfreaderadmin
+docker run -e S3_BUCKET_NAME=awsdemobedrock -v C:/.aws:/root/.aws -p 8083:8083 -it pdfreaderadmin
+
+docker run -e S3_BUCKET_NAME=awsdemobedrock -v C:/.aws:/root/.aws -p 8084:8084 -it pdfreaderuser
+
+
+http://localhost:8083/
+
+netstat -ano | findstr :8083
+Stop-Process -Id <PID>
+
+
+awsBedRockDemo.faiss
+
+awsBedRockDemo.pkl

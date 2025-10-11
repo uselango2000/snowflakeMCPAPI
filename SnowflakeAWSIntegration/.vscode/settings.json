@@ -1,0 +1,4 @@
+{
+  // Set the workspace Python interpreter to Python 3.13
+  "python.defaultInterpreterPath": "C:\\Python313\\python.exe"
+}
