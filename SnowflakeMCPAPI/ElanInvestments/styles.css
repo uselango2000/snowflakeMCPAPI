@@ -251,6 +251,32 @@ body {
     color: var(--text-light);
 }
 
+.service-card-highlight {
+    background: linear-gradient(135deg, #1a2c5b 0%, #2d4a8a 100%);
+    color: white;
+}
+
+.service-card-highlight h3 {
+    color: var(--accent-color);
+}
+
+.service-card-highlight p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.service-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.service-link:hover {
+    transform: translateX(5px);
+}
+
 /* Portfolio Section */
 .portfolio {
     padding: 80px 20px;

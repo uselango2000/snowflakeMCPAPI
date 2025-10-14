@@ -3,6 +3,7 @@ strands-agents-tools
 uv
 boto3
 bedrock-agentcore
-bedrock-agentcore-starter-toolkit
+bedrock-agentcore-starter-toolkit==0.1.19
 python-dotenv
 snowflake-connector-python
+duckduckgo-search
