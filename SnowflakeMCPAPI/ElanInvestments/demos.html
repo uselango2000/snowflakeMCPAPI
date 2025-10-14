@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Demos - Elan Investments</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .video-gallery {
+            padding: 100px 20px 60px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        .video-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .video-header h1 {
+            font-size: 2.5rem;
+            color: #1a2c5b;
+            margin-bottom: 10px;
+        }
+        .video-container {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        .video-item {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .video-item:last-child {
+            border-bottom: none;
+        }
+        .video-item h3 {
+            color: #1a2c5b;
+            margin-bottom: 10px;
+        }
+        .video-item p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        video {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        .video-links {
+            margin-top: 15px;
+        }
+        .video-links a {
+            display: inline-block;
+            margin-right: 15px;
+            padding: 10px 20px;
+            background: #1a2c5b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .video-links a:hover {
+            background: #2d4a8a;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Elan Investments</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Video Gallery -->
+    <section class="video-gallery">
+        <div class="video-header">
+            <h1>Browser Automation Demos</h1>
+            <p>Watch our automated browser interactions in action</p>
+        </div>
+
+        <div class="video-container">
+            <div class="video-item">
+                <h3>Timesheet Entry Automation</h3>
+                <p>Date: October 11, 2025 at 9:56 PM</p>
+                <video controls>
+                    <source src="https://elan-investments-2025.s3.us-east-1.amazonaws.com/browser-automation-recordings/20251011_215639_browser_recording.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-links">
+                    <a href="https://elan-investments-2025.s3.us-east-1.amazonaws.com/browser-automation-recordings/20251011_215639_browser_recording.webm" target="_blank">Open in New Tab</a>
+                    <a href="https://elan-investments-2025.s3.us-east-1.amazonaws.com/browser-automation-recordings/20251011_215639_browser_recording.webm" download>Download Video</a>
+                </div>
+            </div>
+
+            <!-- Add more videos here as they are created -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elan Investments</h3>
+                    <p>Building wealth through strategic investments</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@elaninvestments.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elan Investments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

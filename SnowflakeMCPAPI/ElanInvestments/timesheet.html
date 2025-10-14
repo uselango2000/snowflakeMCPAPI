@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timesheet Entry - Elan Investments</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="timesheet-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Elan Investments</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services" class="active">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Timesheet Section -->
+    <section class="timesheet-section">
+        <div class="container-wide">
+            <div class="timesheet-header">
+                <h1>Employee Timesheet</h1>
+                <p>Weekly Time Entry</p>
+            </div>
+
+            <div class="timesheet-container">
+                <!-- Employee Information -->
+                <div class="employee-info-row">
+                    <div class="info-field">
+                        <label for="employeeName">Employee Name:</label>
+                        <input type="text" id="employeeName" required>
+                    </div>
+                    <div class="info-field">
+                        <label for="employeeId">Employee ID:</label>
+                        <input type="text" id="employeeId" required>
+                    </div>
+                    <div class="info-field">
+                        <label for="department">Department:</label>
+                        <select id="department" required>
+                            <option value="">Select</option>
+                            <option value="Investment Analysis">Investment Analysis</option>
+                            <option value="Portfolio Management">Portfolio Management</option>
+                            <option value="Client Services">Client Services</option>
+                            <option value="Risk Management">Risk Management</option>
+                            <option value="Operations">Operations</option>
+                            <option value="Technology">Technology</option>
+                        </select>
+                    </div>
+                    <div class="info-field">
+                        <label for="weekEnding">Week Ending:</label>
+                        <input type="date" id="weekEnding" required>
+                    </div>
+                </div>
+
+                <!-- Timesheet Table -->
+                <div class="table-container">
+                    <table class="timesheet-table" id="timesheetTable">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Project/Client</th>
+                                <th>Activity Type</th>
+                                <th>Hours</th>
+                                <th>Description</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="timesheetBody">
+                            <!-- Rows will be added dynamically -->
+                        </tbody>
+                        <tfoot>
+                            <tr class="total-row">
+                                <td colspan="3"><strong>Total Hours</strong></td>
+                                <td><strong id="totalHours">0.0</strong></td>
+                                <td colspan="2"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <button type="button" class="btn-add-row" onclick="addRow()">+ Add Row</button>
+
+                <!-- Additional Notes -->
+                <div class="notes-section">
+                    <label for="additionalNotes">Additional Notes:</label>
+                    <textarea id="additionalNotes" rows="3" placeholder="Any additional comments..."></textarea>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="timesheet-actions">
+                    <button type="button" class="btn-secondary" onclick="clearForm()">Clear All</button>
+                    <button type="button" class="btn-primary" onclick="submitTimesheet()">Submit Timesheet</button>
+                </div>
+
+                <!-- Success Message -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <p>✓ Timesheet submitted successfully!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elan Investments</h3>
+                    <p>Building wealth through strategic investments</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="timesheet.html">Timesheet</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@elaninvestments.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elan Investments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="timesheet.js"></script>
+</body>
+</html>
