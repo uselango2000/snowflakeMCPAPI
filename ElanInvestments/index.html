@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elan - Technical Solution Architecture, AI, Data Engineering, DevOps, Cloud Computing (AWS)">
+    <title>Elan | Technical Solution Architect</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">Elan</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Technical Solution Architect</h2>
+            <p>Welcome to my personal website! I design intelligent, scalable solutions using AI, Data Engineering, Cloud, and DevOps. Explore my expertise in building the future with advanced technology.</p>
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Elan</h2>
+            <div class="about-content">
+                <div class="about-main">
+                    <div class="about-photo">
+                        <img src="assets/images/elanHeadShot.png" alt="Elan Headshot" />
+                    </div>
+                    <div class="about-text">
+                        <p><strong>Elan</strong> specializes in Technical Solution Architecture, Data Engineering, Artificial Intelligence (AI), DevOps, and Cloud Computing (AWS). With a passion for building scalable, intelligent, and secure systems, I help organizations leverage technology for real-world impact.</p>
+                        
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature" onclick="window.location.href='src/pages/cloud.html'" style="cursor: pointer;">
+                        <div class="feature-icon">☁️</div>
+                        <h3><a href="src/pages/cloud.html" style="text-decoration: none; color: inherit;">Cloud</a></h3>
+                        <p>Modern cloud infrastructure for scalable solutions</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🤖</div>
+                        <h3>AI</h3>
+                        <p>Advanced artificial intelligence for smart automation</p>
+                    </div>
+                    <div class="feature" onclick="window.location.href='src/pages/architecture.html'" style="cursor: pointer;">
+                        <div class="feature-icon">🏛️</div>
+                        <h3>Architecture</h3>
+                        <p>Robust system and solution architecture</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card service-card-highlight" onclick="window.location.href='src/pages/architecture.html'" style="cursor: pointer;">
+                    <h3>Architecture</h3>
+                    <p>Robust system and cloud architecture for scalable, secure financial solutions.</p>
+                    <a href="src/pages/architecture.html" class="service-link" onclick="event.stopPropagation()">View Architecture →</a>
+                </div>
+
+                <!-- Modal for Architecture Diagram -->
+                <div class="service-card service-card-highlight">
+                    <h3>Expert Analysis</h3>
+                    <p>AI-powered market analysis with real-time insights and professional recommendations.</p>
+                    <a href="src/pages/expert_analysis.html" class="service-link">View Analysis →</a>
+                </div>
+                <div class="service-card service-card-highlight">
+                    <h3>Employee Timesheet</h3>
+                    <p>AI-powered timesheet management for accurate tracking and reporting.</p>
+                    <a href="src/pages/timesheet.html" class="service-link">Access Timesheet →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-details">
+                        <p><strong>Email:</strong> Elan_Shan@Yahoo.com</p>
+                        <p><strong>Phone:</strong> +1 980 939 0100</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Phone Number">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Elan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="src/scripts/script.js"></script>
+</body>
+</html>
